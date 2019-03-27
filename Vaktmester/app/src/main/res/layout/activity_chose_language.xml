@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/chose_lang"
+        android:height="75dp"
+        android:width="156dp"
+        android:lineSpacingMultiplier="1.23"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="91dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="102dp"
+        android:textAllCaps="false"/>
+
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:src="@drawable/globus"
+        android:layout_marginRight="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="49dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_spinner_bacgroun"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/imageViewArrow"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:src="@drawable/arrow_drop_up"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="186dp"
+        android:layout_height="45dp"
+        android:background="@drawable/drawable_spinner_bacgroun"
+        android:layout_gravity="center_horizontal">
+    </Spinner>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>

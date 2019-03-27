@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"/>
+
+    <EditText
+        android:id="@+id/editTextAdress"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:hint="Your email address"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="31dp"
+        android:textAllCaps="false"
+        android:background="@drawable/drawable_username"/>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="CONFIRM"
+        android:textAllCaps="true"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+        android:text="Just go to your email inbox, look out for
+the email, and click on the confirmation link.
+
+    Then your all set!"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"/>
+
+</LinearLayout>

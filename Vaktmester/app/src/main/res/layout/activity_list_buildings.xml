@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/blue">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/buildings_real" />
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="12dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:text="5 tasks"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="17dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="111dp"
+        android:layout_height="22dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="Building name"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:text="Bul. Mihaila Pupina 90, Novi Beograd" />
+
+
+
+
+</RelativeLayout>

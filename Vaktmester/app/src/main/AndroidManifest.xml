@@ -9,13 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoadingActivity">
+        <activity android:name="cubes.vakmaster.nikolov.ui.activity.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="cubes.vakmaster.nikolov.ui.activity.ChoseLanguageActivity"/>
+        <activity android:name="cubes.vakmaster.nikolov.ui.activity.LoginActivity"/>
+        <activity android:name=".ui.activity.ForgotPasswordActivity"/>
+        <activity android:name=".ui.activity.HomepageActivity"/>
+        <activity android:name=".ui.activity.SearchActivity"/>
+        <activity android:name=".ui.activity.SinglBuildingActivity"/>
+
     </application>
 
 </manifest>

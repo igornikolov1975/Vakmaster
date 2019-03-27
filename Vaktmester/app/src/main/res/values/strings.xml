@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Vakmaster</string>
+    <string name="chose_lang">Choose your language"</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_login">Log in</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="title_one">Title one</string>
+    <string name="title_one_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="title_two">Title two</string>
+    <string name="title_two_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
 </resources>

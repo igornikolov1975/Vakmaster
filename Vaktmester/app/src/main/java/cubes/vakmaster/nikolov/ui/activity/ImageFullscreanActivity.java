@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.jsibbold.zoomage.ZoomageView;
+import com.squareup.picasso.Picasso;
 
 import cubes.vakmaster.nikolov.R;
 
@@ -17,5 +18,9 @@ public class ImageFullscreanActivity extends Activity {
         setContentView(R.layout.activity_image_fullscrean);
 
         imageView = findViewById(R.id.imageView);
+
+        String url = getIntent().getStringExtra("image");
+
+        Picasso.get().load(url).into(imageView);
     }
 }

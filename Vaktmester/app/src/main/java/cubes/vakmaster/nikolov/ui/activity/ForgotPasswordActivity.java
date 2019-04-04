@@ -26,7 +26,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         buttonConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ForgotPasswordActivity.this,HomepageActivity.class));
+                startActivity(new Intent(ForgotPasswordActivity.this,MainActivity.class));
                 finish();
             }
         });

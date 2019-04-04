@@ -6,16 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import cubes.vakmaster.nikolov.R;
 
-public class SearchActivity extends Activity {
+public class BulildingActivity extends Activity {
 
     private ImageView imageViewBack, imageViewSearch;
     private EditText editTextSearch;
-    private ListView listView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class SearchActivity extends Activity {
         imageViewBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SearchActivity.this,HomepageActivity.class));
+                startActivity(new Intent(BulildingActivity.this,MainActivity.class));
                 finish();
 
             }
@@ -41,10 +40,9 @@ public class SearchActivity extends Activity {
             public void onClick(View v) {
                 if (editTextSearch.getText().length()==0) {
 
-                    startActivity(new Intent(SearchActivity.this,SinglBuildingActivity.class));
+                    startActivity(new Intent(BulildingActivity.this,BuildingDetailActivity.class));
 
-                    Toast.makeText(getApplicationContext(),"Unesite pojam za koji zelite da pretrazite vesti",Toast.LENGTH_SHORT).show();
-
+                    Toast.makeText(getApplicationContext(),"Unesite objekat koji zelite da pronadjete",Toast.LENGTH_SHORT).show();
 
                 }
                 else {
@@ -52,14 +50,13 @@ public class SearchActivity extends Activity {
                 }
             }
         });
+
     }
-
-
     private void initConponent() {
 
         imageViewBack = findViewById(R.id.imageViewBack);
         imageViewSearch = findViewById(R.id.imageViewSearch);
         editTextSearch = findViewById(R.id.editTextSearch);
-        listView = findViewById(R.id.listView);
+
     }
 }

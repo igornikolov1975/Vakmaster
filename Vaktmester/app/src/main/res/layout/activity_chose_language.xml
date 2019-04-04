@@ -20,7 +20,8 @@
         android:layout_marginTop="91dp"
         android:layout_marginLeft="102dp"
         android:layout_marginRight="102dp"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
 
 
     <ImageView

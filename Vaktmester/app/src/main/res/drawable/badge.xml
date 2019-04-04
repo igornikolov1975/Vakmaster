@@ -3,11 +3,11 @@
     <item>
 
         <shape android:shape="oval">
-            <solid android:color="@color/orange"></solid>
+            <solid android:color="@color/orange"/>
             <padding android:bottom="2dp"
                      android:left="2dp"
                      android:right="2dp"
-                     android:top="2dp"> </padding>
+                     android:top="2dp"/>
 
 
         </shape>

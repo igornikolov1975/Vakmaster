@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import cubes.vakmaster.nikolov.R;
 
-public class SinglBuildingActivity extends Activity {
+public class BuildingDetailActivity extends Activity {
 
     private ImageView imageViewBack, imageViewMapa, imageView, imageViewArrow,
             imageViewContact, imageViewTickets, imageViewSuppler, imageViewDocuments;
@@ -27,15 +27,20 @@ public class SinglBuildingActivity extends Activity {
         initConponent();
         addListener();
 
-
     }
-
     private void addListener() {
         imageViewBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SinglBuildingActivity.this,SearchActivity.class));
+                startActivity(new Intent(BuildingDetailActivity.this,BulildingActivity.class));
                 finish();
+            }
+        });
+        imageViewMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),BuildingMapActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -46,7 +51,6 @@ public class SinglBuildingActivity extends Activity {
         imageViewMapa = findViewById(R.id.imageViewMapa);
         imageView = findViewById(R.id.imageView);
         imageViewArrow = findViewById(R.id.imageViewArrow);
-        imageViewContact = findViewById(R.id.imageViewContact);
         imageViewTickets = findViewById(R.id.imageViewTickets);
         imageViewSuppler = findViewById(R.id.imageViewSuppler);
         imageViewDocuments = findViewById(R.id.imageViewDocuments);

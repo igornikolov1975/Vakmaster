@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewBuildings"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:src="@drawable/buildings_real"
+        android:layout_toRightOf="@id/imageViewBack"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Building name"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/imageViewBuildings"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Igor Nikolov, 00381-66-820-6526"
+        android:textSize="13dp"
+        android:layout_toRightOf="@id/imageViewBuildings"
+        android:layout_below="@id/textViewName"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:layout_toRightOf="@id/textViewPerson"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/textViewRequests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All requests for one task"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewBuildings"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextRequestName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Request name"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="#FF406880"
+        android:layout_below="@id/textViewRequests"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/drawable_username"
+        android:gravity="left|center"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="205dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="220dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@color/blue"/>
+
+    <TextView
+        android:id="@+id/textViewReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Report"
+        android:layout_below="@id/buttonSave"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewReport">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 11.07.2018"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textViewEdit"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:text="Edit"
+            android:textColor="#FF406880"
+            android:textSize="12dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewPencil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pencil"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created: John Doe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="340dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textViewDateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date created: John Doe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="370dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment: "
+        android:textAllCaps="false"
+        android:textColor="#FF406880"
+        android:textSize="16dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+        android:lines="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -8,5 +8,6 @@
     <string name="title_one_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="title_two">Title two</string>
     <string name="title_two_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="title_activity_building_map">Map</string>
 
 </resources>

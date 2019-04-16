@@ -2,6 +2,8 @@ package cubes.vakmaster.nikolov.ui.model;
 
 import java.io.Serializable;
 
+import cubes.vakmaster.nikolov.R;
+
 
 public class BuildingItem implements Serializable {
 
@@ -15,6 +17,7 @@ public class BuildingItem implements Serializable {
 
         this.title = "Stepa Stepanovic";
         this.description = "Vase Smajevica";
+
 
     }
 

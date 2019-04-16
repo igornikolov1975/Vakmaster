@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 import cubes.vakmaster.nikolov.R;
 
@@ -67,7 +66,7 @@ public class LanguageAdapter extends ArrayAdapter<String> {
 
         }
        else if (position == 1){
-            imageView.setImageResource(R.drawable.flaf_norway);
+            imageView.setImageResource(R.drawable.flag_norway);
 
         }
 

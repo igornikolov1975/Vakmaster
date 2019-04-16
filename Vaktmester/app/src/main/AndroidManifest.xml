@@ -16,21 +16,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.LoadingActivity">
+        <activity android:name=".ui.activity.login.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ChoseLanguageActivity" />
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".ui.activity.ForgotPasswordActivity" />
-        <activity android:name=".ui.activity.MainActivity" />
-        <activity android:name=".ui.activity.BulildingActivity" />
-        <activity android:name=".ui.activity.BuildingDetailActivity" />
-        <activity android:name=".ui.activity.TicketFiltersActivity" />
-        <activity android:name=".ui.activity.BuildingListActivity"/>
+        <activity android:name=".ui.activity.login.ChoseLanguageActivity" />
+        <activity android:name=".ui.activity.login.LoginActivity" />
+        <activity android:name=".ui.activity.login.ForgotPasswordActivity" />
+        <activity android:name=".ui.activity.main.MainActivity" />
+        <activity android:name=".ui.activity.building.BulildingActivity" />
+        <activity android:name=".ui.activity.building.BuildingDetailActivity" />
+        <activity android:name=".ui.activity.building.BuildingListActivity" />
+        <activity
+            android:name=".ui.activity.building.BuildingMapActivity"
+            android:label="@string/title_activity_building_map" />
+        <activity android:name=".ui.activity.tickets.TicketsActivity"/>
+        <activity android:name=".ui.activity.tickets.FilterActivity"/>
+        <activity android:name=".ui.activity.tickets.EditTaskActivity"/>
+
+
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -44,9 +51,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".ui.activity.BuildingMapActivity"
-            android:label="@string/title_activity_building_map"></activity>
+
     </application>
 
 </manifest>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:layout_gravity="left|center"
+            android:text="Building name"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageViewMapa"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="220dp"
+                    android:src="@drawable/mapa" />
+
+            <TextView
+                android:id="@+id/textViewMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View on map"
+                android:textSize="14dp"
+                android:textColor="#FF406880"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/blue"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/buildings_real"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 tasks"
+                android:padding="10dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/tasks"
+                android:textSize="12dp"
+                android:layout_marginTop="17dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:text="Building name"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="26dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textViewAdress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:text="Bul. Mihaila Pupina 90, Novi Beograd"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page..."
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact person"
+                android:textColor="#FF406880"
+                android:textSize="14dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Igor Nikolov"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/textViewNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="066-820-6526"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPerson"
+                android:layout_alignBottom="@+id/textViewNumber"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewTickets"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tickets"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="16dp" />
+
+            <ImageView
+                android:id="@+id/imageViewSuppler"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/supplier"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="140dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewDocuments"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/documents" />
+
+            <TextView
+                android:id="@+id/textViewTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tickets"
+                android:textColor="#FF406880"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewSuppler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supplier"
+                android:textColor="#FF406880"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="155dp"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewDocuments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewDocuments"
+                android:layout_alignStart="@+id/imageViewDocuments"
+                android:layout_alignLeft="@+id/imageViewDocuments"
+                android:layout_alignEnd="@+id/imageViewDocuments"
+                android:layout_alignRight="@+id/imageViewDocuments"
+               android:textSize="10dp"
+                android:lines="1"
+                android:text="Documents"
+                android:gravity="center"
+                android:textColor="#FF406880" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -44,9 +44,9 @@
             android:id="@+id/imageViewArrow"
             android:layout_width="10dp"
             android:layout_height="5dp"
-            android:src="@drawable/arrow_drop_up"
+            android:src="@drawable/ic_expand_more"
             android:layout_gravity="right|center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp" />
 
     <Spinner
         android:id="@+id/spinnerLanguage"
